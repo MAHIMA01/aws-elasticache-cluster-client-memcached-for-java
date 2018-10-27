@@ -10,22 +10,22 @@ command:
     ant
 
 This will generate binary, source, and javadoc jars in the build
-directory of the project.
+directory of the projects.
 
 # Testing
 
-The latest version of Amazon ElastiCache Cluster Client supports unit tests and integration tests.
+The latest version of the Amazon ElastiCache Cluster Client supports the following tests, i.e., unit test and integration test.
 
-Unit tests do not require any running memcached servers, and can be run using Apache Ant by the following command:
+Unit tests do not require any running memory cached servers, and can be run using Apache Ant by the following command:
 
     ant test
 
-Integration tests are always run against local memcached servers. Start integration tests by the
+Integration tests always run against the local memcached servers. Integration tests can be executed by the
 following command:
 
     ant it
 
-It has a set of command line arguments that can be used to configure your client mode and your local testing server. The arguments are listed below.
+It has a set of command line arguments that can be used to configure your client mode and your local testing server. The arguments are listed below:
 
     -Dclient.mode=memcached_client_mode
 
